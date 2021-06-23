@@ -35,6 +35,7 @@ a{
 
 body{
   font-family: var(--font-roboto);
+  background-color: var(--color-Gris-claro);
 }
 
 ul {
@@ -46,11 +47,13 @@ ul {
 /* HEADER */
 
 header .burger-menu {
+  text-align: center;
   background-color:var(--color-Celeste);
   padding: 5px;
   width: 15px;
   color:var(--color-Gris-claro);
   border-radius: 5px;
+  margin: 10px auto 0px auto;
 
 }
 
@@ -63,6 +66,7 @@ header {
   background-color: var(--color-amarillo);
   font-size: var(--paragraph);
   color: var(--color-Gris-oscuro);
+  padding: 10px;
 }
 header .logo {
   width: 130px;
@@ -76,7 +80,10 @@ header p {
   margin-bottom: 10px;
   text-align: center;
 }
-
+/* NAV */
+nav{
+  display: none;
+}
 /* header ul li a{
   color: rgb(12, 11, 11);
 } */
@@ -100,4 +107,68 @@ footer div{
   margin-bottom: 25px;
   margin-top: 25px;
   text-align: center;
+}
+/* BANNER */
+.banner{
+  display: none;
+}
+/* MAIN */
+
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+/* SEARCH BAR */
+.search-bar{
+  display: inline;
+}
+
+/* CARD */
+.card{
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.card .card-content{
+  border-top: var(--color-Gris-claro);
+  padding: 15px;
+}
+
+.card .card-content h6{
+  display: none;
+}
+
+.card .card-content .icono-truck{
+  border: 1px solid var(--color-Verde);
+  border-radius: 50%;
+  width: fit-content;
+  padding: 10px;
+}
+.card .card-content .icono-truck i {
+  color: var(--color-Verde);
+}
+
+
+/* Media Queries */
+/* TABLET */
+@media screen and (min-width: 361px){
+  .card{
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, .8) ;
+  }
+  .card .card-content h6{
+    display: block;
+  }
+  nav{
+    display: block;
+  }
+  .burger-menu{
+    display: none;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 769px){
+
+ 
+
 }
